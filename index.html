@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColdHouse Storage - Premium Cold Storage Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        .facility-card {
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .facility-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .vegetable-card { background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%); }
+        .fruit-card { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
+        .grain-card { background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #1e40af 100%);
+        }
+        
+        .storage-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">❄️</span>
+                    </div>
+                    <h1 class="text-2xl font-bold text-gray-800">ColdHouse Storage</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Home</a>
+                    <a href="#facilities" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Facilities</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Services</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Contact</a>
+                </nav>
+                <button class="md:hidden text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-6">Premium Cold Storage Solutions</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                State-of-the-art temperature-controlled storage facilities for vegetables, fruits, and grains. 
+                Preserving freshness, extending shelf life, maintaining quality.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    View Our Facilities
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                    Get Quote
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-green-600 mb-2">2</div>
+                    <div class="text-gray-600 font-medium">Vegetable Storage Houses</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-orange-600 mb-2">4</div>
+                    <div class="text-gray-600 font-medium">Fruit Storage Houses</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-purple-600 mb-2">5</div>
+                    <div class="text-gray-600 font-medium">Grain Storage Houses</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Storage Facilities</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Advanced cold storage solutions designed specifically for different types of produce
+                </p>
+            </div>
+
+            <!-- Vegetable Storage -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-center mb-8 text-green-600">Vegetable Storage Houses</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="facility-card vegetable-card text-white p-8 rounded-xl">
+                        <div class="storage-icon text-6xl">🥬</div>
+                        <h4 class="text-2xl font-bold mb-4">Vegetable House A</h4>
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span>Temperature:</span>
+                                <span class="font-semibold">0°C to 4°C</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Humidity:</span>
+                                <span class="font-semibold">85-95%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Capacity:</span>
+                                <span class="font-semibold">500 tons</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Specializes in:</span>
+                                <span class="font-semibold">Leafy Greens</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="facility-card vegetable-card text-white p-8 rounded-xl">
+                        <div class="storage-icon text-6xl">🥕</div>
+                        <h4 class="text-2xl font-bold mb-4">Vegetable House B</h4>
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span>Temperature:</span>
+                                <span class="font-semibold">2°C to 6°C</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Humidity:</span>
+                                <span class="font-semibold">90-95%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Capacity:</span>
+                                <span class="font-semibold">750 tons</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Specializes in:</span>
+                                <span class="font-semibold">Root Vegetables</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fruit Storage -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-center mb-8 text-orange-600">Fruit Storage Houses</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="facility-card fruit-card text-white p-6 rounded-xl">
+                        <div class="storage-icon text-5xl">🍎</div>
+                        <h4 class="text-xl font-bold mb-3">Fruit House A</h4>
+                        <div class="space-y-2 text-sm">
+                            <div>Temp: -1°C to 1°C</div>
+                            <div>Humidity: 90-95%</div>
+                            <div>Capacity: 400 tons</div>
+                            <div class="font-semibold">Apples & Pears</div>
+                        </div>
+                    </div>
+                    <div class="facility-card fruit-card text-white p-6 rounded-xl">
+                        <div class="storage-icon text-5xl">🍊</div>
+                        <h4 class="text-xl font-bold mb-3">Fruit House B</h4>
+                        <div class="space-y-2 text-sm">
+                            <div>Temp: 3°C to 8°C</div>
+                            <div>Humidity: 85-90%</div>
+                            <div>Capacity: 350 tons</div>
+                            <div class="font-semibold">Citrus Fruits</div>
+                        </div>
+                    </div>
+                    <div class="facility-card fruit-card text-white p-6 rounded-xl">
+                        <div class="storage-icon text-5xl">🍌</div>
+                        <h4 class="text-xl font-bold mb-3">Fruit House C</h4>
+                        <div class="space-y-2 text-sm">
+                            <div>Temp: 12°C to 15°C</div>
+                            <div>Humidity: 85-90%</div>
+                            <div>Capacity: 300 tons</div>
+                            <div class="font-semibold">Tropical Fruits</div>
+                        </div>
+                    </div>
+                    <div class="facility-card fruit-card text-white p-6 rounded-xl">
+                        <div class="storage-icon text-5xl">🍇</div>
+                        <h4 class="text-xl font-bold mb-3">Fruit House D</h4>
+                        <div class="space-y-2 text-sm">
+                            <div>Temp: -1°C to 2°C</div>
+                            <div>Humidity: 90-95%</div>
+                            <div>Capacity: 450 tons</div>
+                            <div class="font-semibold">Berries & Grapes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grain Storage -->
+            <div>
+                <h3 class="text-3xl font-bold text-center mb-8 text-purple-600">Grain Storage Houses</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <div class="facility-card grain-card text-white p-6 rounded-xl">
+                        <div class="storage-icon text-5xl">🌾</div>
+                        <h4 class="text-lg font-bold mb-3">Grain House A</h4>
+                        <div class="space-y-2 text-sm">
+                            <div>Temp: 10°C to 15°C</div>
+                            <div>Humidity: 12-14%</div>
+                            <div>Capacity: 1000 tons</div>
+                            <div class="font-semibold">Wheat & Barley</div>
+                        </div>
+                    </div>
+                    <div class="facility-card grain-card text-white p-6 rounded-xl">
+                        <div class="storage-icon text-5xl">🌽</div>
+                        <h4 class="text-lg font-bold mb-3">Grain House B</h4>
+                        <div class="space-y-2 text-sm">
+                            <div>Temp: 12°C to 18°C</div>
+                            <div>Humidity: 13-15%</div>
+                            <div>Capacity: 800 tons</div>
+                            <div class="font-semibold">Corn & Maize</div>
+                        </div>
+                    </div>
+                    <div class="facility-card grain-card text-white p-6 rounded-xl">
+                        <div class="storage-icon text-5xl">🍚</div>
+                        <h4 class="text-lg font-bold mb-3">Grain House C</h4>
+                        <div class="space-y-2 text-sm">
+                            <div>Temp: 8°C to 12°C</div>
+                            <div>Humidity: 12-14%</div>
+                            <div>Capacity: 1200 tons</div>
+                            <div class="font-semibold">Rice & Paddy</div>
+                        </div>
+                    </div>
+                    <div class="facility-card grain-card text-white p-6 rounded-xl">
+                        <div class="storage-icon text-5xl">🫘</div>
+                        <h4 class="text-lg font-bold mb-3">Grain House D</h4>
+                        <div class="space-y-2 text-sm">
+                            <div>Temp: 10°C to 16°C</div>
+                            <div>Humidity: 11-13%</div>
+                            <div>Capacity: 600 tons</div>
+                            <div class="font-semibold">Pulses & Beans</div>
+                        </div>
+                    </div>
+                    <div class="facility-card grain-card text-white p-6 rounded-xl">
+                        <div class="storage-icon text-5xl">🌰</div>
+                        <h4 class="text-lg font-bold mb-3">Grain House E</h4>
+                        <div class="space-y-2 text-sm">
+                            <div>Temp: 5°C to 10°C</div>
+                            <div>Humidity: 10-12%</div>
+                            <div>Capacity: 400 tons</div>
+                            <div class="font-semibold">Nuts & Seeds</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600">Comprehensive cold storage solutions for your business</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
+                    <div class="text-5xl mb-4">📦</div>
+                    <h3 class="text-xl font-bold mb-4">Storage Solutions</h3>
+                    <p class="text-gray-600">Temperature-controlled storage for all types of produce with 24/7 monitoring</p>
+                </div>
+                <div class="text-center p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
+                    <div class="text-5xl mb-4">🚛</div>
+                    <h3 class="text-xl font-bold mb-4">Logistics Support</h3>
+                    <p class="text-gray-600">Complete supply chain management with refrigerated transportation</p>
+                </div>
+                <div class="text-center p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
+                    <div class="text-5xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold mb-4">Quality Control</h3>
+                    <p class="text-gray-600">Advanced monitoring systems ensuring optimal storage conditions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-xl opacity-90">Ready to store your produce with us? Contact our team today</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">📍</span>
+                            <span>123 Cold Storage Avenue, Industrial District</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">📞</span>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">✉️</span>
+                            <span>info@coldhousestorage.com</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">🕒</span>
+                            <span>24/7 Operations</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Request a Quote</h3>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:border-blue-500 focus:outline-none">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:border-blue-500 focus:outline-none">
+                        <select class="w-full p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:border-blue-500 focus:outline-none">
+                            <option>Select Storage Type</option>
+                            <option>Vegetable Storage</option>
+                            <option>Fruit Storage</option>
+                            <option>Grain Storage</option>
+                            <option>Mixed Storage</option>
+                        </select>
+                        <textarea placeholder="Tell us about your storage needs" rows="4" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:border-blue-500 focus:outline-none"></textarea>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                            Send Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center space-x-3 mb-4">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold">❄️</span>
+                </div>
+                <span class="text-xl font-bold">ColdHouse Storage</span>
+            </div>
+            <p class="text-gray-400 mb-4">Premium cold storage solutions for vegetables, fruits, and grains</p>
+            <p class="text-gray-500 text-sm">&copy; 2024 ColdHouse Storage. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will contact you within 24 hours to discuss your storage needs.');
+            this.reset();
+        });
+
+        // Button click handlers
+        document.querySelectorAll('button').forEach(button => {
+            if (button.type !== 'submit') {
+                button.addEventListener('click', function() {
+                    if (this.textContent.includes('View Our Facilities')) {
+                        document.querySelector('#facilities').scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    } else if (this.textContent.includes('Get Quote')) {
+                        document.querySelector('#contact').scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96ff5d6c96d67a04',t:'MTc1NTMzMDg4MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
