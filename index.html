@@ -11,20 +11,22 @@
         
         .facility-card {
             transition: all 0.3s ease;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            border: 1px solid #333;
         }
         
         .facility-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(255,165,0,0.2);
+            border-color: #ff6600;
         }
         
-        .vegetable-card { background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%); }
-        .fruit-card { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
-        .grain-card { background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); }
+        .vegetable-card { background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); border-color: #22c55e; }
+        .fruit-card { background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); border-color: #ff6600; }
+        .grain-card { background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); border-color: #ffa500; }
         
         .hero-bg {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #1e40af 100%);
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
         }
         
         .storage-icon {
@@ -32,26 +34,34 @@
             height: 60px;
             margin: 0 auto 1rem;
         }
+        
+        .dark-section {
+            background: #1a1a1a;
+        }
+        
+        .darker-section {
+            background: #0d0d0d;
+        }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-black">
     <!-- Header -->
-    <header class="bg-white shadow-lg sticky top-0 z-50">
+    <header class="bg-black shadow-lg sticky top-0 z-50 border-b border-gray-800">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <div class="w-10 h-10 bg-orange-600 rounded-lg flex items-center justify-center">
                         <span class="text-white font-bold text-xl">❄️</span>
                     </div>
-                    <h1 class="text-2xl font-bold text-gray-800">ColdHouse Storage</h1>
+                    <h1 class="text-2xl font-bold text-white">ColdHouse Storage</h1>
                 </div>
                 <nav class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Home</a>
-                    <a href="#facilities" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Facilities</a>
-                    <a href="#services" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Services</a>
-                    <a href="#contact" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Contact</a>
+                    <a href="#home" class="text-gray-300 hover:text-orange-500 font-medium transition-colors">Home</a>
+                    <a href="#facilities" class="text-gray-300 hover:text-orange-500 font-medium transition-colors">Facilities</a>
+                    <a href="#services" class="text-gray-300 hover:text-orange-500 font-medium transition-colors">Services</a>
+                    <a href="#contact" class="text-gray-300 hover:text-orange-500 font-medium transition-colors">Contact</a>
                 </nav>
-                <button class="md:hidden text-gray-600">
+                <button class="md:hidden text-gray-300">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -69,10 +79,10 @@
                 Preserving freshness, extending shelf life, maintaining quality.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                <button class="bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors">
                     View Our Facilities
                 </button>
-                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                <button class="border-2 border-orange-600 text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 hover:text-white transition-colors">
                     Get Quote
                 </button>
             </div>
@@ -80,38 +90,38 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 dark-section">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div class="p-6">
-                    <div class="text-4xl font-bold text-green-600 mb-2">2</div>
-                    <div class="text-gray-600 font-medium">Vegetable Storage Houses</div>
+                    <div class="text-4xl font-bold text-green-500 mb-2">2</div>
+                    <div class="text-gray-300 font-medium">Vegetable Storage Houses</div>
                 </div>
                 <div class="p-6">
-                    <div class="text-4xl font-bold text-orange-600 mb-2">4</div>
-                    <div class="text-gray-600 font-medium">Fruit Storage Houses</div>
+                    <div class="text-4xl font-bold text-orange-500 mb-2">4</div>
+                    <div class="text-gray-300 font-medium">Fruit Storage Houses</div>
                 </div>
                 <div class="p-6">
-                    <div class="text-4xl font-bold text-purple-600 mb-2">5</div>
-                    <div class="text-gray-600 font-medium">Grain Storage Houses</div>
+                    <div class="text-4xl font-bold text-yellow-500 mb-2">5</div>
+                    <div class="text-gray-300 font-medium">Grain Storage Houses</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Facilities Section -->
-    <section id="facilities" class="py-20 bg-gray-50">
+    <section id="facilities" class="py-20 darker-section">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Storage Facilities</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                <h2 class="text-4xl font-bold text-white mb-4">Our Storage Facilities</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
                     Advanced cold storage solutions designed specifically for different types of produce
                 </p>
             </div>
 
             <!-- Vegetable Storage -->
             <div class="mb-16">
-                <h3 class="text-3xl font-bold text-center mb-8 text-green-600">Vegetable Storage Houses</h3>
+                <h3 class="text-3xl font-bold text-center mb-8 text-green-500">Vegetable Storage Houses</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="facility-card vegetable-card text-white p-8 rounded-xl">
                         <div class="storage-icon text-6xl">🥬</div>
@@ -162,7 +172,7 @@
 
             <!-- Fruit Storage -->
             <div class="mb-16">
-                <h3 class="text-3xl font-bold text-center mb-8 text-orange-600">Fruit Storage Houses</h3>
+                <h3 class="text-3xl font-bold text-center mb-8 text-orange-500">Fruit Storage Houses</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="facility-card fruit-card text-white p-6 rounded-xl">
                         <div class="storage-icon text-5xl">🍎</div>
@@ -209,7 +219,7 @@
 
             <!-- Grain Storage -->
             <div>
-                <h3 class="text-3xl font-bold text-center mb-8 text-purple-600">Grain Storage Houses</h3>
+                <h3 class="text-3xl font-bold text-center mb-8 text-yellow-500">Grain Storage Houses</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
                     <div class="facility-card grain-card text-white p-6 rounded-xl">
                         <div class="storage-icon text-5xl">🌾</div>
@@ -267,27 +277,27 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
+    <section id="services" class="py-20 dark-section">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
-                <p class="text-xl text-gray-600">Comprehensive cold storage solutions for your business</p>
+                <h2 class="text-4xl font-bold text-white mb-4">Our Services</h2>
+                <p class="text-xl text-gray-300">Comprehensive cold storage solutions for your business</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="text-center p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
+                <div class="text-center p-8 rounded-xl bg-gray-900 hover:shadow-lg hover:shadow-orange-500/20 transition-all border border-gray-700 hover:border-orange-500">
                     <div class="text-5xl mb-4">📦</div>
-                    <h3 class="text-xl font-bold mb-4">Storage Solutions</h3>
-                    <p class="text-gray-600">Temperature-controlled storage for all types of produce with 24/7 monitoring</p>
+                    <h3 class="text-xl font-bold mb-4 text-white">Storage Solutions</h3>
+                    <p class="text-gray-300">Temperature-controlled storage for all types of produce with 24/7 monitoring</p>
                 </div>
-                <div class="text-center p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
+                <div class="text-center p-8 rounded-xl bg-gray-900 hover:shadow-lg hover:shadow-orange-500/20 transition-all border border-gray-700 hover:border-orange-500">
                     <div class="text-5xl mb-4">🚛</div>
-                    <h3 class="text-xl font-bold mb-4">Logistics Support</h3>
-                    <p class="text-gray-600">Complete supply chain management with refrigerated transportation</p>
+                    <h3 class="text-xl font-bold mb-4 text-white">Logistics Support</h3>
+                    <p class="text-gray-300">Complete supply chain management with refrigerated transportation</p>
                 </div>
-                <div class="text-center p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
+                <div class="text-center p-8 rounded-xl bg-gray-900 hover:shadow-lg hover:shadow-orange-500/20 transition-all border border-gray-700 hover:border-orange-500">
                     <div class="text-5xl mb-4">📊</div>
-                    <h3 class="text-xl font-bold mb-4">Quality Control</h3>
-                    <p class="text-gray-600">Advanced monitoring systems ensuring optimal storage conditions</p>
+                    <h3 class="text-xl font-bold mb-4 text-white">Quality Control</h3>
+                    <p class="text-gray-300">Advanced monitoring systems ensuring optimal storage conditions</p>
                 </div>
             </div>
         </div>
@@ -325,17 +335,17 @@
                 <div>
                     <h3 class="text-2xl font-bold mb-6">Request a Quote</h3>
                     <form class="space-y-4">
-                        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:border-blue-500 focus:outline-none">
-                        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:border-blue-500 focus:outline-none">
-                        <select class="w-full p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:border-blue-500 focus:outline-none">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:border-orange-500 focus:outline-none">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:border-orange-500 focus:outline-none">
+                        <select class="w-full p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:border-orange-500 focus:outline-none">
                             <option>Select Storage Type</option>
                             <option>Vegetable Storage</option>
                             <option>Fruit Storage</option>
                             <option>Grain Storage</option>
                             <option>Mixed Storage</option>
                         </select>
-                        <textarea placeholder="Tell us about your storage needs" rows="4" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:border-blue-500 focus:outline-none"></textarea>
-                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                        <textarea placeholder="Tell us about your storage needs" rows="4" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 border border-gray-600 focus:border-orange-500 focus:outline-none"></textarea>
+                        <button type="submit" class="w-full bg-orange-600 text-white py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors">
                             Send Request
                         </button>
                     </form>
@@ -348,7 +358,7 @@
     <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-6 text-center">
             <div class="flex items-center justify-center space-x-3 mb-4">
-                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                <div class="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center">
                     <span class="text-white font-bold">❄️</span>
                 </div>
                 <span class="text-xl font-bold">ColdHouse Storage</span>
@@ -397,5 +407,5 @@
             }
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96ff5d6c96d67a04',t:'MTc1NTMzMDg4MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96ff6509b2b43e2d',t:'MTc1NTMzMTE5MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
